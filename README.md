@@ -14,7 +14,7 @@ It installs the **published** package from npm at an exact version (currently `r
 
 ## Local development
 
-Node 22.18 or later (CI uses Node 24).
+Node 22.18 or later (CI uses Node 26).
 
 ```sh
 npm ci
