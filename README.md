@@ -2,7 +2,7 @@
 
 Interactive playground for [react-data-export](https://www.npmjs.com/package/react-data-export): export datasets and HTML tables to `.xlsx` and `.csv` with the real library, in the browser. Files you open never leave your machine: there is no backend, no analytics and no cookies.
 
-It installs the **published** package from npm at an exact version (currently `react-data-export@1.0.0-alpha.3`, the `next` tag), so it shows what users get.
+It installs the **published** package from npm at an exact version (currently `react-data-export@1.0.0-beta.0`, the `next` tag), so it shows what users get.
 
 ## What it shows
 
