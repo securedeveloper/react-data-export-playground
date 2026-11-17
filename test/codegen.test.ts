@@ -4,7 +4,7 @@ import { DEFAULT_OPTIONS, exportSpec, sheetOptions, type DatasetEditorOptions } 
 import { ordersDataset, SAMPLES } from '../src/lib/samples';
 
 const sales = SAMPLES[0]!.dataset;
-const V = '1.0.0-alpha.2';
+const V = '1.0.0-alpha.3';
 
 /** Evaluates the options object literal the `exportDataset` snippet passes. */
 function optionsOf(code: string): Record<string, unknown> {
@@ -45,7 +45,7 @@ describe('generateDatasetCode', () => {
 
   it('emits a component, a hook and a function variant with install instructions', () => {
     const c = generateDatasetCode(sales, { ...DEFAULT_OPTIONS, format: 'csv', csvDelimiter: ';' }, V, 'component');
-    expect(c.install).toBe('npm install react-data-export@1.0.0-alpha.2');
+    expect(c.install).toBe('npm install react-data-export@1.0.0-alpha.3');
     expect(c.code).toContain("import { ExcelExport, type Dataset } from 'react-data-export';");
     expect(c.code).toContain('satisfies Dataset<Record<string, unknown>>;');
     expect(c.code).toMatch(/dataset=\{\{\n\s+\.\.\.dataset,\n\s+name: 'Sales',/);
